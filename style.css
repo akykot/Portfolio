@@ -1,69 +1,76 @@
-li {list-style-type: none;}
-a:active {color:#666;} a:hover {color: #666;}       /*зробити посилання кольоровими при наведенні*/
+li {list-style-type: none;}  
 a {text-decoration: none;}
+*{padding:0;}
+button {cursor: pointer;}
+
+
+/*settings of header elements*/
 header {
     background: rgba(183, 76, 76, 0.42);
     display: flex;
     margin: 0;
-    padding: 0;
 }
 .container {
-   
     display:flex; 
     flex-flow: row wrap;
-    justify-content: space-around; 
-    align-items: center;
-    
+    align-items: center; 
 }
-.aboutme {
-    background: rgba(176, 85, 85, 0.63);
-    height: 878px;
-    border-radius: 0px 0px 0px 30px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    color:#FFFFFF;
+h1 {
+    font-family: 'Pattaya';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 67px;
+    letter-spacing: 0.245em;
+    color: #000000;
+    margin-left: 40px;
+    margin-right: 85px;
 }
-.section2 {
-    display: flex;
-    align-items: center;
-}
-.social {
-    display: flex; 
-    justify-content: center;
-}
-.section3 {
-
-}
-.section4 {
-
-}
-.section5 {
-    background: rgba(183, 76, 76, 0.35);
-    height: 398;
-
-}
-.photo {
-    margin: 0;
-    padding: 0;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly; 
-    align-items: center;
-}
-.social-item{
-    margin-left:24px;
-}
-a.top {
+.container a{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.245em;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    margin-left: 49px;
+}
+.buttons {
+    border: none;
+    border-radius: 10px;
+    background: none;
+    margin-left: 50px;
+    margin-right: 10px;
+}
+.container a:hover {
+    font-size: 180%;
+}
+
+
+/*style of section 1 elements*/
+.section1 {
+    background: rgba(176, 85, 85, 0.63);
+    height: 750px;
+    border-radius: 0px 0px 0px 30px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color:#FFFFFF;
+}
+.topphoto {
+    width: 560px;
+    height: 540px;
+    margin-left: 100px;
+    margin-right: 80px;
+}
+.aboutme {
+    margin-right: 80px;
+}
+.social {                         /*also is style of section5 and footer elements*/
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 .abouttext {
     font-family: 'Poppins';
@@ -75,7 +82,137 @@ a.top {
     letter-spacing: 0.1em;
     color: #FFFFFF;
 }
-.clientsaying {
+.icon {                          /*also is style of footer elements*/
+    margin-left: 24px;
+}
+.chat {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.245em;
+    color: rgba(0, 0, 0, 0.57);
+    mix-blend-mode: normal;
+    background: rgba(255, 255, 255, 0.49);
+    width: 380px;
+    height: 75px;
+    border-radius: 9px;
+    border: none;
+    margin-bottom: 25px;
+}
+.chat:hover {
+    background-color: rgba(102,102,102, 0.49);
+}
+.center {
+    text-align: center;
+}
+
+
+/*style of section 2 elements*/
+.section2 {
+    margin: 40px 40px 100px 40px;
+}
+.container2 {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.border {
+    border: 40px solid rgba(183, 76, 76, 0.35);
+    height: 520px;  /*without this there was a small white line between border and photo*/
+}
+.photo2 {
+    width: 480px;
+    height: 440px;
+}
+.servicep {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+.view {
+    background: rgba(192, 105, 77, 0.47);
+    border-radius: 10px;
+    border: none;
+    width: 170px;
+    height: 70px;
+    margin-left: 75px;
+    color: #FFFFFF;
+}
+.view:hover {
+    color: rgba(102, 102, 102, 0.49);
+}
+.sp {
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 50px;
+    margin-right: 70px;
+}
+.angle-right {
+    text-align: center;
+    padding-right:225px;
+    margin:0px;
+}
+
+
+/*style of section 3 elements*/
+.section3 {
+    background-color: rgba(183, 76, 76, 0.35);
+    padding: 50px 50px 50px 0;
+}
+.container3 {
+    display:flex;
+}
+.box {
+    margin-left: 50px;
+    padding: 35px 35px 65px 70px;
+    background-color: #FFFFFF;
+}
+.arrow {
+    text-align: end;
+}
+.ellipse {
+    position: relative;
+    text-align: end;
+    bottom: 34px;
+    left: 8px;
+}
+.contact {
+    background: rgba(192, 105, 77, 0.47);
+    border-radius: 10px;
+    border: none;
+    width: 450px;
+    height: 100px;
+    margin-top: 30px;
+    color: #000000;
+}
+.contact:hover {
+    color: rgba(102, 102, 102, 0.49);
+}
+.spc {
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 30px;
+}
+
+
+/*style of section 4 elements*/
+.bckimg {
+    height: 560px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76)), url("./images/Rectangle27.png");    /*background image isn't shown without gradient*/
+    padding: 50px 60px 0px 60px;
+    margin-bottom: 0px;
+}
+.bckimg h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+.bckimg p {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -84,7 +221,54 @@ a.top {
     text-align: center;
     letter-spacing: 0.245em;
     color: #000000;
+    margin: 0px 50px 75px 50px;
 }
+.bckimg .arrow {
+    position: relative;
+    right: 1px;
+}
+.arrowleft {
+    transform: rotateY(180deg);
+}
+.ellipseleft {
+    position: relative;
+    text-align: start;
+    bottom: 34px;
+    right: 9px;
+}
+.supersection5 {
+    height: 700px;
+}
+.section5 {
+    background: rgba(183, 76, 76, 0.35);
+    height: 398px;
+    margin-top: -61px;
+}
+.section5 .social {
+    padding-top: 76px;
+    color:#FFFFFF;
+    margin-bottom: -30px;
+}
+.photo{
+    margin: 0;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly; 
+    align-items: center;
+}
+/*let's gather some photos to make design prettier*/
+.photo li:nth-child(4n+1) {
+    margin-top:-130px;
+}
+.photo li:nth-child(even) {
+    padding-top: 50px;
+}
+.photo li:nth-child(3) {
+    margin-top: 200px;
+}
+
+
+/*some styles for text*/
 .sp,.spc {
     font-family: 'Poppins';
     font-style: normal;
@@ -92,55 +276,7 @@ a.top {
     letter-spacing: 0.245em;
     color: #000000;
 }
-.sp{
-    font-size: 18px;
-    line-height: 27px;
-}
-.spc{
-    font-size: 20px;
-    line-height: 30px;
-}
-.chat {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.245em;
-    color: rgba(0, 0, 0, 0.57);
-    mix-blend-mode: normal;
-    background: rgba(255, 255, 255, 0.49);
-    border-radius: 9px;
-    border: none;   
-}
-.view,.contact {
-    background: rgba(192, 105, 77, 0.47);
-    border-radius: 10px;
-    border: none;
-}
-.view{color:#FFFFFF;}
-.contact{color:#000000;}
-.borders {
-
-}
-.button-icon {
-    fill: #666;
-  }
-  .button-icon:hover {
-    fill: green;
-  }
-
-.bckimg {
-    height: 685px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.76), rgba(255, 255, 255, 0.76)), url("./images/Rectangle27.png");
-    /* background-color: rgba(255, 255, 255, 0.76); */
-}
-h2,.view,.contact {
+h2,.view,.contact,.send {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 700;
@@ -148,17 +284,69 @@ h2,.view,.contact {
     line-height: 54px;
     letter-spacing: 0.245em;
 }
-.button {
-    border: none;
-    border-radius: 10px;
-    background-color: none;
+
+
+/*additional task for button "let's chat"*/
+#shadow {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
 }
-h1 {
-    font-family: 'Pattaya';
+#window {
+    width: 500px;
+    height: 450px;
+    text-align: center;
+    padding: 15px;
+    
+    border-radius: 10px;
+    color: rgba(183, 76, 76, 0.72);
+    position: absolute;
+    top:180px;
+    left:500px; 
+    background: #fff;
+}
+#shadow:target {display: block;}
+.close {
+    position: absolute;
+    display: inline-block;
+    background: none;
+    cursor:pointer;
+    border: none;
+    left:93%;
+    top:4px;
+}
+.close:hover {background: rgb(102, 102, 102, 0.20);}
+#window .abouttext {
+    color:rgba(183, 76, 76, 0.72);
+    margin-right:5px;
+}
+.forma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.send {
+    background: rgba(192, 105, 77, 0.47);
+    border-radius: 10px;
+    border: none;
+    width: 170px;
+    height: 70px;
+    margin-top: 25px;
+    color: #FFFFFF;
+}
+input{
+    height:30px;
+}
+input::placeholder{
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
-    line-height: 67px;
     letter-spacing: 0.245em;
-    color: #000000;
+    color: rgb(0, 0, 0, 0.4);
+    font-size: 10px;
+    line-height: 30px;
 }

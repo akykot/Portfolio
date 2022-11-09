@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" href="./vector/Uamesha Ramanay.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./vector.css" />
     <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" rel="stylesheet" />
   </head>
@@ -14,114 +14,178 @@
     <header>
       <h1>Uamesha Ramanay</h1>
       <ul class="container">
-        <li><a href="./" class="top">Home</a></li>
-        <li><a href="./" class="top">About</a></li>
-        <li><a href="./" class="top">Service</a></li>
-        <li><a href="./" class="top">Contact</a></li>
+        <li><a href="./">Home</a></li>
+        <li><a href="./">About</a></li>
+        <li><a href="./">Service</a></li>
+        <li><a href="./">Contact</a></li>
         <li>
-          <!-- <button class="button" aria-label="">
-            <svg class="button-icon" width="30" height="30">
-              <use href="./vector/search.svg#icon-search"></use>
-            </svg>
-          </button> -->
-          <svg width="30px", height="30px"> <use href="./vector/search.svg#icon-search"></use></svg>
+          <button class="buttons" aria-label="">
+            <object type="image/svg+xml" data="./vector/search.svg" width="25" height="25"></object>
+          </button>
         </li>
-        <li class="icon-search"></li>
+        <li>
+      </li>
       </ul>
     </header>
     <main>
-      <section >
-        <ul class="aboutme">
-          <li><img src="./images/Rectangle 6.png" alt=""/> </li>
-          <li class="">
-            <h2 class="social">About me</h2>
+      <section>
+        <ul class="section1">
+          <li ><img class="topphoto" src="./images/Rectangle 6.png" alt=""/> </li>
+          <li class="aboutme">
+            <h2 class="social">ABOUT ME</h2>
             <p class="abouttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.</p>
-            <button type="submit" class="chat">Let's chat</button>
+            <ul id="shadow">
+              <ul id="window">
+                <a href="#" >
+                  <button class="close" aria-label="">
+                    <svg width="30" height="30" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">     /*підключаємо свг явно, щоб зробити його клікабельним*/
+                      <line x1="0" y1="100" x2="100" y2="0" stroke-width="20" stroke="black"/>
+                      <line x1="0" y1="0" x2="100" y2="100" stroke-width="20" stroke="black"/>
+                    </svg>
+                  </button>
+                </a>
+                <h2>Let's chat</h2>
+                <form name="let's chat" autocomplete="on" novalidate>
+                  <label class="forma">
+                    <p class="abouttext">Email: </p>
+                    <input type="email" name="email" placeholder="user@gmail.com"/>
+                  </label>
+                  <label class="forma">
+                    <p class="abouttext">Write to me: </p>
+                    <input type="message" name="message" placeholder="What's on your mind?"/>
+                  </label>
+                  <button class="send" type="submit">Send</button>
+                </form>
+              </ul>
+            </ul>
+            <ul class="center">
+              <a href="#shadow"><button type="submit" class="chat">Let's chat</button></a>
+            </ul>
             <ul class="social">
-              <li class="icon-google"></li>
-              <li class="icon-facebook"></li>
-              <li class="icon-instagram"></li>
-              <li class="icon-twitter"></li>
+              <li>
+                <object type="image/svg+xml" data="./vector/google.svg" width="30" height="30"></object>
+              </li>
+              <li>
+                <object class="icon" type="image/svg+xml" data="./vector/facebook.svg" width="15" height="30"></object>
+              </li>
+              <li>
+                <object class="icon" type="image/svg+xml" data="./vector/instagram.svg" width="30" height="30"></object>
+              </li>
+              <li>
+                <object class="icon" type="image/svg+xml" data="./vector/twitter.svg" width="30" height="30"></object>
+              </li>
             </ul>
           </li>
         </ul>
       </section>
-      <section>
-        <ul class="section2">
-          <li><img src="./images/Rectangle 24.png" alt=""/> </li>
+      <section class="section2">
+        <ul class="container2">
+          <li class="border"><img class="photo2" src="./images/Rectangle 24.png" alt=""/> </li>
           <li>
-            <ul class="section2">
+            <ul class="servicep">
               <li><h2>service package</h2></li>
-              <li ><button type="submit" class="view">View</button></li>
+              <li><button type="submit" class="view">View</button></li>
             </ul>
             <p class="sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.</p>
           </li>
         </ul>
-        <ul class="section2">
-            <li>
-                <ul class="section2">
-                    <li><h2>service package</h2></li>
-                    <li><button type="submit" class="view">View</button></li>
-                </ul>
+        <ul class="container2">
+          <li>
+            <ul class="servicep">
+              <li><h2>service package</h2></li>
+              <li><button type="submit" class="view">View</button></li>
+            </ul>
             <p class="sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.</p>
-            </li>
-            <li><img src="./images/Rectangle 25.png" alt=""/> </li>
-            
+          </li>
+          <li class="border"><img class="photo2" src="./images/Rectangle 25.png" alt=""/> </li>  
         </ul>
-        <ul class="section2">
-            <li><img src="./images/Rectangle 26.png" alt=""/> </li>
-            <li>
-                <ul class="section2">
-                    <li><h2>service package</h2></li>
-                    <li><button type="submit" class="view">View</button></li>
-                </ul>
+        <ul class="container2">
+          <li class="border"><img class="photo2" src="./images/Rectangle 26.png" alt=""/> </li>
+          <li>
+            <ul class="servicep">
+              <li><h2>service package</h2></li>
+              <li><button type="submit" class="view">View</button></li>
+            </ul>
             <p class="sp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac egestas facilisi arcu vivamus. Sit magna at id ipsum sit id viverra felis et. Pellentesque amet tristique rhoncu, donec a euismod velit. Hendrerit molestie fermentum odi euismod.</p>
-            </li>
+          </li>
+        </ul>
+        <ul class="angle-right">
+          <object type="image/svg+xml" data="./vector/angle-right.svg" width="10" height="15"></object>
         </ul>
       </section>
-      <section>
-        <ul>
-            <li>
-                <li class="icon-arrow"></li>
-                <h2>service package</h2>
-                <p class="spc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet adipiscing bibendum velit bibendum.</p>
-                <li><button type="submit" class="contact">contact me</button></li>
+      <section class="section3">
+        <ul class="container3">
+          <ul class="box">
+            <li class="arrow">
+              <object type="image/svg+xml" data="./vector/arrow.svg" width="22" height="23"></object>
+            </li>
+            <li class="ellipse">
+              <object type="image/svg+xml" data="./vector/ellipse.svg" width="40" height="40"></object>
             </li>
             <li>
-                <li class="icon-arrow"></li>
-                <h2>service package</h2>
-                <p class="spc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet adipiscing bibendum velit bibendum.</p>
-                <li><button type="submit" class="contact">contact me</button></li>
+              <h2>service package</h2>
+              <p class="spc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet adipiscing bibendum velit bibendum.</p>
+              <li><button type="submit" class="contact">contact me</button></li>
             </li>
+          </ul>
+          <ul class="box">
+            <li class="arrow">
+              <object type="image/svg+xml" data="./vector/arrow.svg" width="22" height="23"></object>
+            </li>
+            <li class="ellipse">
+              <object type="image/svg+xml" data="./vector/ellipse.svg" width="40" height="40"></object>
+            </li>
+            <li>
+              <h2>service package</h2>
+              <p class="spc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet adipiscing bibendum velit bibendum.</p>
+              <li><button type="submit" class="contact">contact me</button></li>
+            </li>
+          </ul>
         </ul>
       </section>
       <section class="bckimg">
-          <li class="icon-arrow"></li>
-          <h2>What my client are saying</h2>
-          <p class="clientsaying">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  my contact    odio eget sollicitudin tincidunt eget  vulputate. Odio molestie ac tortor pellentesque elit congue. Sapien blandit nunc dictum praesent vel auctor. Tempus, quis aliquet tortor aliquet sit at at.</p>
-          <li class="icon-arrow"></li>
+        <li class="arrow">
+          <object type="image/svg+xml" data="./vector/arrow.svg" width="22" height="23"></object>
+        </li>
+        <li class="ellipse">
+          <object type="image/svg+xml" data="./vector/ellipse.svg" width="40" height="40"></object>
+        </li>
+        <h2>What my client are saying</h2>
+        <p class="clientsaying">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  my contact    odio eget sollicitudin tincidunt eget  vulputate. Odio molestie ac tortor pellentesque elit congue. Sapien blandit nunc dictum praesent vel auctor. Tempus, quis aliquet tortor aliquet sit at at.</p>
+        <li>
+          <object class="arrowleft" type="image/svg+xml" data="./vector/arrow.svg" width="22" height="23"></object>
+        </li>
+        <li class="ellipseleft">
+          <object type="image/svg+xml" data="./vector/ellipse.svg" width="40" height="40"></object>
+        </li>
       </section>
-      <section class="section5">
-        <h2 class="social">Follow me @bellaadndrv</h2>
-        <ul class="photo">
+      <section class="supersection5">
+        <ul class="section5">
+          <h2 class="social">Follow me @BELLAADNDRV</h2>
+          <ul class="photo photoplace">
             <li><img src="./images/Rectangle 19.png" alt=""/> </li>
             <li><img src="./images/Rectangle 20.png" alt=""/> </li>
             <li><img src="./images/Rectangle 21.png" alt=""/> </li>
             <li><img src="./images/Rectangle 22.png" alt=""/> </li>
             <li><img src="./images/Rectangle 23.png" alt=""/> </li>
+          </ul>
         </ul>
       </section>
     </main>
     <footer>
-      <!-- <li><svg> <use href="./vector/google.svg"></use> </svg> </li>
-      <li><svg> <use href="./vector/facebook.svg"></use> </svg> </li>
-      <li><svg> <use href="./vector/instagram.svg"></use> </svg> </li>
-      <li><svg> <use href="./vector/twitter.svg"></use> </svg> </li> -->
       <ul class="social">
-          <li class="icon-google"></li>
-          <li class="icon-facebook"></li>
-          <li class="icon-instagram"></li>
-          <li class="icon-twitter"></li>
+        <li>
+          <object type="image/svg+xml" data="./vector/google.svg" width="30" height="30"></object>
+        </li>
+        <li>
+          <object class="icon" type="image/svg+xml" data="./vector/facebook.svg" width="15" height="30"></object>
+        </li>
+        <li>
+          <object class="icon" type="image/svg+xml" data="./vector/instagram.svg" width="30" height="30"></object>
+        </li>
+        <li>
+           <object class="icon" type="image/svg+xml" data="./vector/twitter.svg" width="30" height="30"></object>
+        </li>
       </ul>
     </footer>
   </body>
